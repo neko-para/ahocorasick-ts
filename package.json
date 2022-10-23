@@ -1,0 +1,23 @@
+{
+  "name": "ahocorasick-ts",
+  "version": "1.0.0",
+  "description": "ahocorasick implemention",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "build": "npx tsc",
+    "test": "npx tsc && node test.js"
+  },
+  "keywords": [
+    "ahocorasick",
+    "typescript"
+  ],
+  "author": "nekosu",
+  "license": "MIT",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.1",
+    "@typescript-eslint/parser": "^5.40.1",
+    "eslint": "^8.26.0",
+    "typescript": "^4.8.4"
+  }
+}
