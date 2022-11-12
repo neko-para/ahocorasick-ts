@@ -40,7 +40,7 @@ export class AhoCorasick {
       queue.push(this.trie.child[ch])
     }
     while (queue.length > 0) {
-      const cur = queue.shift()
+      const cur = queue.shift() as TrieNode
 
       for (const ch in cur.child) {
         queue.push(cur.child[ch])
@@ -64,7 +64,7 @@ export class AhoCorasick {
     let cur = this.trie
     const res: SearchResult[] = []
 
-    key.split("").forEach((ch, i) => {
+    key.split('').forEach((ch, i) => {
       while (cur !== this.trie && !(ch in cur.child)) {
         cur = cur.failure
       }
